@@ -1,0 +1,28 @@
+{
+    //  Use  IntelliSense  para  encontrar  para fora  que  os atributos  existem  em  C #  depuração
+    //  Use  pairar  para  a  descrição  dos existentes atributos   
+    //  Para  mais  informações,  visite  https : //github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+    " versão " :  " 0.2.0 " ,
+    " configurações " : [
+         {
+             " name " : " .NET Core Launch (console) " ,
+             " tipo " : " coreclr " ,
+             " request " : " launch " ,
+             " preLaunchTask " : " build " ,
+             //  Se  você  tiver  mudado  alvo  frameworks,  fazer  a certeza  de  atualizar  o  programa de  caminho.
+             " program " : " $ {workspaceFolder} /bin/Debug/netcoreapp3.1/DIO.Series.dll " ,
+             " args " : [],
+             " cwd " : " $ {workspaceFolder} " ,
+             //  Para obter  mais  informações  sobre  o  campo 'console'  ,  consulte  https : //aka.ms/VSCode-CS-LaunchJson-Console
+             " console " :  " externalTerminal " ,
+             " stopAtEntry " : false ,
+             " internalConsoleOptions " : " openOnSessionStart "
+         },
+         {
+             " name " : " .NET Core Attach " ,
+             " tipo " : " coreclr " ,
+             " request " : " attach " ,
+             " processId " : " $ {command: pickProcess} "
+         }
+     ]
+ }

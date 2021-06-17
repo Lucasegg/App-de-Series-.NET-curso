@@ -1,0 +1,42 @@
+{
+    " versão " : " 2.0.0 " ,
+    " tarefas " : [
+        {
+            " label " : " build " ,
+            " command " : " dotnet " ,
+            " tipo " : " processo " ,
+            " args " : [
+                " construir " ,
+                " $ {workspaceFolder} /DIO.Series.csproj " ,
+                " / propriedade: GenerateFullPaths = true " ,
+                " / consoleloggerparameters: NoSummary "
+            ],
+            " problemMatcher " : " $ msCompile "
+        },
+        {
+            " rótulo " : " publicar " ,
+            " command " : " dotnet " ,
+            " tipo " : " processo " ,
+            " args " : [
+                " publicar " ,
+                " $ {workspaceFolder} /DIO.Series.csproj " ,
+                " / propriedade: GenerateFullPaths = true " ,
+                " / consoleloggerparameters: NoSummary "
+            ],
+            " problemMatcher " : " $ msCompile "
+        },
+        {
+            " label " : " assistir " ,
+            " command " : " dotnet " ,
+            " tipo " : " processo " ,
+            " args " : [
+                " assistir " ,
+                " correr " ,
+                " $ {workspaceFolder} /DIO.Series.csproj " ,
+                " / propriedade: GenerateFullPaths = true " ,
+                " / consoleloggerparameters: NoSummary "
+            ],
+            " problemMatcher " : " $ msCompile "
+        }
+    ]
+}
